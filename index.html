@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <script src="js/jquery.min .js"></script>
+    <script src="js/jquery.js"></script>
+    <style>
+        .tasks {
+            width: 400px;
+        }
+        .tasks-list {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: .85rem;
+        }
+        .tasks-list-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        </style>  
+</head>
+<body>
+    <div class="tasks">
+        <div class="tasks-input">
+            <input type="text" value="" / class="task">
+            <button class="add">追加</button>
+        </div>
+    
+        <div class="tasks-wrap">
+            <ul class="tasks-list">
+                <li class="tasks-list-item">
+                    <div>卵を買う</div>
+                    <div><button >削除</button></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
