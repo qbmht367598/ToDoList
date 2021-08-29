@@ -12,7 +12,11 @@ $(function(){
    let remove=$('<button>');       //buttonタグ作成
    remove.text('削除');             //buttonにテキスト追加
 
-   remove.click(removeTask);
+   //remove.click(removeTask);
+   remove.on('click',function(){
+    let task=$('this').closest('li');
+    task.remove();
+   });
 
    btn.append(remove);　　　　　　　//divにbuttonタグ追加
    li.append(btn);　　　　　　　　　//liにdiv追加
@@ -20,9 +24,9 @@ $(function(){
    $('.tasks-list').append(li);　　　//ulにliを追加
  });
 
- function removeTask(){
-   let task=$('this').closest('li');
-   task.remove();
- }
+ //function removeTask(){
+   //let task=$('this').closest('li');
+   //task.remove();
+ //}
  
 });
